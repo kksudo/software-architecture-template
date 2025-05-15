@@ -1,0 +1,12 @@
+#IDE
+.idea
+.vscode
+*.iml
+*.xml
+
+#OS
+.DS_Store
+Thumbs.db
+
+#other
+/tmp
