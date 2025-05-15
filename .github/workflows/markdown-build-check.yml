@@ -47,7 +47,7 @@ jobs:
 #
 #      - name: Concatenate markdown files
 #        run: |
-#          mkdir -p build
+#          mkdir -p build/en build/ru
 #          cat $(ls docs/en/*.md | sort) > build/en/architecture-description-template.md
 #          cat $(ls docs/ru/*.md | sort) > build/ru/architecture-description-template.md
 #
@@ -57,12 +57,12 @@ jobs:
 #          markitdown build/ru/architecture-description-template.md -o build/ru/architecture-description-template.pdf
 #
 #      - name: Convert to HTML
-#        run:
+#        run: |
 #          markitdown build/ru/architecture-description-template.md -o build/ru/architecture-description-template.html
 #          markitdown build/en/architecture-description-template.md -o build/en/architecture-description-template.html
 #
 #      - name: Convert to DOCX
-#        run:
+#        run: |
 #          markitdown build/ru/architecture-description-template.md -o build/ru/architecture-description-template.docx
 #          markitdown build/en/architecture-description-template.md -o build/en/architecture-description-template.docx
 #
