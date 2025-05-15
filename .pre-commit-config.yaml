@@ -1,0 +1,12 @@
+repos:
+  - repo: git@github.com:pre-commit/pre-commit-hooks.git
+    rev: v5.0.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: no-commit-to-branch
+      - id: trailing-whitespace
+  # TBD: instructions to install to the local environment
+#  - repo: https://github.com/markdownlint/markdownlint
+#    rev: v0.13.0
+#    hooks:
+#      - id: markdownlint
